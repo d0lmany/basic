@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TTTgui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300" MaxWidth="300" MaxHeight="400" WindowStyle="ToolWindow">
+        Title="Tic Tac Toe" Height="400" Width="300" MaxWidth="300" MaxHeight="400" WindowStyle="ToolWindow">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -18,10 +18,10 @@
         </Style>
         <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
         <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFDCBEFD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF7D3CB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFDAC4F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF642C8B"/>
         <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
@@ -85,6 +85,6 @@
         <Button Grid.Column="0" Grid.Row="3" Name="ca" Click="Click" Content=" "/>
         <Button Grid.Column="1" Grid.Row="3" Name="cb" Click="Click" Content=" "/>
         <Button Grid.Column="2" Grid.Row="3" Name="cc" Click="Click" Content=" "/>
-        <TextBlock Grid.ColumnSpan="3" FontSize="22" HorizontalAlignment="Center"><Run Name="Out">Player X</Run><LineBreak/><Run>makes a move</Run></TextBlock>
+        <TextBlock Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="Center" TextAlignment="Center"><Run Name="Out">Player X</Run><LineBreak/><Run>makes a move</Run></TextBlock>
     </Grid>
 </Window>

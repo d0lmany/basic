@@ -5,13 +5,12 @@ namespace TTTgui
 {
     public partial class MainWindow : Window
     {
-        string player = "X";
+        private string player = "X";
         private void Click(object sender, RoutedEventArgs e)
         {
             if (((Button)sender).Content.ToString() == " ")
             {
                 ((Button)sender).Content = player;
-                Out.Text = Out.Text.Replace(Out.Text[^1], player[0]);
             }
             else
             {
@@ -22,13 +21,16 @@ namespace TTTgui
                 MessageBox.Show($"{player} wins!");
                 Close();
             }
-            if (isDraw())
+            else
             {
-                MessageBox.Show("Nobody wins..");
-                Close();
+                if (isDraw())
+                {
+                    MessageBox.Show("Nobody wins..");
+                    Close();
+                }
             }
             player = (player == "X") ? "O" : "X";
-
+            Out.Text = Out.Text.Replace(Out.Text[^1], player[0]);
         }
 
         private bool isDraw()
@@ -46,14 +48,21 @@ namespace TTTgui
 
         private bool CheckWin()
         {
-             return aa.Content.ToString() == player && ab.Content.ToString() == player && ac.Content.ToString() == player ||
-                    ba.Content.ToString() == player && bb.Content.ToString() == player && bc.Content.ToString() == player ||
-                    ca.Content.ToString() == player && cb.Content.ToString() == player && cc.Content.ToString() == player ||
-                    aa.Content.ToString() == player && ba.Content.ToString() == player && ca.Content.ToString() == player ||
-                    ab.Content.ToString() == player && bb.Content.ToString() == player && bc.Content.ToString() == player ||
-                    ac.Content.ToString() == player && cb.Content.ToString() == player && cc.Content.ToString() == player ||
-                    aa.Content.ToString() == player && bb.Content.ToString() == player && cc.Content.ToString() == player ||
-                    ac.Content.ToString() == player && bb.Content.ToString() == player && ca.Content.ToString() == player;
+            string[,] a = {
+                { aa.Content.ToString()!, ab.Content.ToString()!, ac.Content.ToString()! },
+                { ba.Content.ToString()!, bb.Content.ToString()!, bc.Content.ToString()! },
+                { ca.Content.ToString()!, cb.Content.ToString()!, cc.Content.ToString()! }
+            };
+            return (a[0, 0] == player && a[0, 1] == player && a[0, 2] == player) ||
+                (a[1, 0] == player && a[1, 1] == player && a[1, 2] == player) ||
+                (a[2, 0] == player && a[2, 1] == player && a[2, 2] == player) ||
+
+                (a[0, 0] == player && a[1, 0] == player && a[2, 0] == player) ||
+                (a[0, 1] == player && a[1, 1] == player && a[2, 1] == player) ||
+                (a[0, 2] == player && a[1, 2] == player && a[2, 2] == player) ||
+
+                (a[0, 0] == player && a[1, 1] == player && a[2, 2] == player) ||
+                (a[0, 2] == player && a[1, 1] == player && a[2, 0] == player);
         }
 
         public MainWindow()
