@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTTgui", "TTTgui\TTTgui.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers", "Flappers\Flappers.csproj", "{B02E8B0C-90E0-414C-8BAE-236EB3EC323F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradientpallette", "gradientpallette\gradientpallette.csproj", "{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B02E8B0C-90E0-414C-8BAE-236EB3EC323F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B02E8B0C-90E0-414C-8BAE-236EB3EC323F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B02E8B0C-90E0-414C-8BAE-236EB3EC323F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
