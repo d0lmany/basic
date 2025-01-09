@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers", "Flappers\Flappe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradientpallette", "gradientpallette\gradientpallette.csproj", "{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pingpong", "pingpong\pingpong.csproj", "{1FCB6D99-CEEB-4000-9242-8CB2296A591E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bool_calc", "bool_calc\bool_calc.csproj", "{D36DCE56-F19F-4702-8937-4DF0576A13CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE459B3-BF98-4E53-91CF-772F3A9AC33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FCB6D99-CEEB-4000-9242-8CB2296A591E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FCB6D99-CEEB-4000-9242-8CB2296A591E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FCB6D99-CEEB-4000-9242-8CB2296A591E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FCB6D99-CEEB-4000-9242-8CB2296A591E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36DCE56-F19F-4702-8937-4DF0576A13CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36DCE56-F19F-4702-8937-4DF0576A13CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36DCE56-F19F-4702-8937-4DF0576A13CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36DCE56-F19F-4702-8937-4DF0576A13CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
